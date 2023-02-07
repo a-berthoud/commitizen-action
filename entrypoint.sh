@@ -7,6 +7,8 @@ if [[ -z $INPUT_GITHUB_TOKEN ]]; then
   exit 1
 fi
 
+echo "get dir"
+ls -la
 echo "Configuring Git username, email, and pull behavior..."
 git config --local user.name "${INPUT_GIT_NAME}"
 git config --local user.email "${INPUT_GIT_EMAIL}"
